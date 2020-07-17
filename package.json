@@ -1,0 +1,23 @@
+{
+  "name": "stream-service",
+  "version": "1.0.0",
+  "description": "This is a practice from [Bootstrapping Microservices with Docker, Kubernetes, and Terraform](https://www.manning.com/books/bootstrapping-microservices-with-docker-kubernetes-and-terraform) Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baconYao/stream-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baconYao/stream-service/issues"
+  },
+  "homepage": "https://github.com/baconYao/stream-service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
