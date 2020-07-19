@@ -20,3 +20,17 @@ Using Node、Docker、K8s and Terraform to build a microservices service.
 
 ### run it with live reload for fast development
 `npm run start:dev`
+
+## Run with Docker
+
+### Build Image from Dockerfile
+
+`docker build -t video-streaming --file Dockerfile .`
+
+### Run container
+
+`docker run -d -p 3000:3000 video-streaming`
+
+### View Logs
+
+`docker logs <container-id>`
