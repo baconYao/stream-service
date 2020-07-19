@@ -31,6 +31,32 @@ Using Node、Docker、K8s and Terraform to build a microservices service.
 
 `docker run -d -p 3000:3000 video-streaming`
 
+or from private container registry
+
+`docker run -d -p 3000:3000 baconyaostreamingmicroservice.azurecr.io/video-streaming:latest`
+
 ### View Logs
 
 `docker logs <container-id>`
+
+## Container Registry (Private on Azure)
+
+### Docker login
+
+`docker login <registry-url> --username <username> --password <password>`
+
+### Tag image
+
+`docker tag <existing-image> <registry-url>/<image-name>:<version>`
+
+For example
+
+`docker tag video-streaming <registry-url>/video-streaming:latest`
+
+### Push image
+
+`docker push <registry-url>/<image-name>:<version>`
+
+For example
+
+`docker push <registry-url>/video-streaming:latest`
