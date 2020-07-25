@@ -39,6 +39,16 @@ or from private container registry
 
 `docker logs <container-id>`
 
+### Run with docker compose
+> For development use
+
+#### Build image and up container:
+
+`docker-compose up --build`
+
+#### Stop running container and remove it:
+`docker-compose down`
+
 ## Container Registry (Private on Azure)
 
 ### Docker login
