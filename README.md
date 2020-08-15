@@ -4,24 +4,23 @@ This is a practice from [Bootstrapping Microservices with Docker, Kubernetes, an
 
 Using Node、Docker、K8s and Terraform to build a microservices service.
 
-## Before execution
+I highly recommend you to use `Docker Compose` to execute these microservices while running on local.
 
-### Export environment
+## Run with docker compose
+> For development use
 
-* VIDEOS_PATH
-  * `export VIDEOS_PATH=./videos`
+#### Build image and up container:
 
-## Install depedencies
+`docker-compose up --build`
 
-### Simulate a production deployment
-`npm install --only=production`
+#### Stop running container and remove it:
+`docker-compose down`
 
-`npm start`
-
-### run it with live reload for fast development
-`npm run start:dev`
+After starting microservices, you could type `localhost:4001/video` in URL and you will get the video.
 
 ## Run with Docker
+
+> This is outdate method now, I will update this section later...
 
 ### Build Image from Dockerfile
 
@@ -39,15 +38,17 @@ or from private container registry
 
 `docker logs <container-id>`
 
-### Run with docker compose
-> For development use
+---
 
-#### Build image and up container:
+## Install depedencies
 
-`docker-compose up --build`
+### Simulate a production deployment
+`npm install --only=production`
 
-#### Stop running container and remove it:
-`docker-compose down`
+`npm start`
+
+### run it with live reload for fast development
+`npm run start:dev`
 
 ## Container Registry (Private on Azure)
 
